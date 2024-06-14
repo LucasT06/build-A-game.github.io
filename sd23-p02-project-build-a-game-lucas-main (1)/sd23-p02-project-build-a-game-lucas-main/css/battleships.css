@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --missed: rgba(150, 150, 150, 0.8);
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.grey-box {
+    width: 100%;
+    height: 180px;
+    background-color: rgb(255, 255, 255);
+    filter: drop-shadow(8px 8px 30px #969696);
+    border-radius: 10px;
+}
+
+.tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(0, 0, 200, 0.1);
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    box-sizing: border-box;
+}
+
+.hit {
+    background-color: rgba(158, 15, 15, 0.127);
+    color: rgb(255, 255, 255);
+    border: 1px solid var(--missed);
+}
+
+.miss {
+    color: rgb(155, 155, 155);
+    border: 1px solid var(--missed);
+}
+
+.playerone-warships {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    width: 700px;
+    position: absolute;
+    top: 220px;
+    left: 130px;
+    filter: drop-shadow(8px 8px 30px #dfdede);
+}
+
+.playertwo-warships {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    width: 700px;
+    position: absolute;
+    top: 220px;
+    right: 130px;
+    filter: drop-shadow(8px 8px 30px #dbd9d9);
+}
+
+/*.ships{
+    background-color: rgb(200, 200, 200);
+    border: 1px solid var(--missed);
+}*/
+
+.shoot_mode {
+    display: inline-block;
+    position: absolute;
+    height: 35px;
+    width: 150px;
+    left: 46%;
+    bottom: 20%;
+    text-align: center;
+    background-color: var(--missed);
+    color: white;
+    border-radius: 10px;
+}
+
+.player_one_name {
+    display: inline-block;
+    position: absolute;
+    height: 35px;
+    width: 150px;
+    left: 22%;
+    bottom: 20%;
+    font-size: larger;
+    text-align: center;
+    color: black
+}
+
+.player_two_name {
+    display: inline-block;
+    position: absolute;
+    height: 35px;
+    width: 150px;
+    left: 70%;
+    bottom: 20%;
+    font-size: larger;
+    text-align: center;
+    color: black
+}

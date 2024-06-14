@@ -1,0 +1,126 @@
+body {
+  color: white;
+  background-image: url('/fotos/91657.jpg');
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0%
+
+}
+
+
+ul.link {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-top: 4px solid #ffcc00;
+  position: sticky;
+  display: flex;
+  align-items: center;
+  top: 0;
+  left: 0;
+}
+
+ul.link li {
+  display: inline;
+  margin: 10px;
+}
+
+
+ul.link li a {
+  text-decoration: none;
+  color: #ffcc00;
+  font-weight: bold;
+  padding: 1px 10px;
+}
+
+
+ul.link li a:hover {
+  background-color: #ffcc00;
+  color: #000;
+  border-radius: 5px;
+}
+
+.game-container{
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: minmax(200px, auto);
+
+}
+.copyright {
+  position: absolute;
+  margin-top: 750px;
+}
+
+.header {
+  /* position: absolute; */
+  margin-top: 25px;
+}
+
+.img-mol {
+  color: white;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+} 
+
+.molgame {
+   background-color: blueviolet;
+}
+.molgame:hover {
+  background-color: rgba(0, 0, 255, 0.3) ;
+}
+.battleships {
+  background-color: rgb(54, 69, 119);
+}
+.battleships:hover {
+  background-color: rgb(105, 108, 108) ;
+}
+  ul.link {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.7); 
+    border-top: 2px solid #b6da00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+  }
+  
+  ul.link li {
+    display: inline;
+    margin: 10px;
+  }
+  
+ 
+  ul.link li a {
+    text-decoration: none;
+    color: #ffcc00;
+    font-weight: bold;
+    padding: 1px 10px;
+  }
+  
+  .img-bke {
+      color: white;
+      grid-column-start: 4;
+      grid-column-end: 5;
+      grid-row-start: 1;
+      grid-row-end: 2;
+  }
+
+.bke img {
+  width: 22s0px;
+  height: 220px;
+}
+ 
+
+

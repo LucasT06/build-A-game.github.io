@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game-screen {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.bkeLogo {
+    position: absolute;
+    left: 1%;
+    top: 2%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+}
+
+.board {
+    position: absolute;
+    top: 30%;
+    left: 39%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.board #dropbox {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    border-left: 4px solid white;
+    border-bottom: 4px solid white;
+    padding: 10px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+.board,
+#dropbox:nth-child(1),
+#dropbox:nth-child(4),
+#dropbox:nth-child(7)
+{
+    border-left: none;
+}
+
+.board,
+#dropbox:nth-child(7),
+#dropbox:nth-child(8),
+#dropbox:nth-child(9)
+{
+    
+    border-bottom: none;
+}
+
+.red {
+    background-color: red;
+    
+}
+
+.green {
+    background-color: green;
+  }
+
+.result {
+    position: relative;
+    text-align: center;
+    font-size: 200%;
+    top: -65%;
+    left: auto;
+    color: white;
+}
+
+.resetButton {
+    position: relative;
+    width: 150px;
+    height: 50px;
+    top: 100px;
+    left: 885px;
+    color: black;
+    background-color: white;
+    border: 2px solid gray;
+
+}
+
+.scorebord {
+    position: relative;
+    top: 200px;
+    width: 400px;
+    height: 700px;
+    border: 1px solid white;
+}
+
+.player {
+    color: white;
+    font-size: 60px;
+}
+
+.singelplayer, .multiplayer {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    width: 160px;
+    height: 40px;
+    margin-top: 10px;
+}
